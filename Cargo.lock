@@ -1309,7 +1309,7 @@ dependencies = [
  "env_logger 0.10.0",
  "futures",
  "libp2p",
- "multiaddr",
+ "multiaddr 0.17.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -1502,7 +1502,7 @@ dependencies = [
  "env_logger 0.10.0",
  "futures",
  "libp2p",
- "multiaddr",
+ "multiaddr 0.17.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2133,7 +2133,7 @@ dependencies = [
  "env_logger 0.10.0",
  "futures",
  "libp2p",
- "multiaddr",
+ "multiaddr 0.17.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -2273,7 +2273,7 @@ dependencies = [
  "libp2p-webrtc",
  "libp2p-websocket",
  "libp2p-yamux",
- "multiaddr",
+ "multiaddr 0.17.1 (git+https://github.com/p-shahi/rust-multiaddr.git?branch=support-webrtc-protocol-code)",
  "pin-project",
  "tokio",
 ]
@@ -2342,7 +2342,7 @@ dependencies = [
  "libp2p-mplex",
  "libp2p-noise",
  "log",
- "multiaddr",
+ "multiaddr 0.17.1 (git+https://github.com/p-shahi/rust-multiaddr.git?branch=support-webrtc-protocol-code)",
  "multihash",
  "multistream-select",
  "once_cell",
@@ -2514,7 +2514,7 @@ dependencies = [
  "ed25519-dalek",
  "libsecp256k1",
  "log",
- "multiaddr",
+ "multiaddr 0.17.1 (git+https://github.com/p-shahi/rust-multiaddr.git?branch=support-webrtc-protocol-code)",
  "multihash",
  "p256 0.12.0",
  "prost",
@@ -3260,6 +3260,24 @@ dependencies = [
 ]
 
 [[package]]
+name = "multiaddr"
+version = "0.17.1"
+source = "git+https://github.com/p-shahi/rust-multiaddr.git?branch=support-webrtc-protocol-code#1bbec9da745e5330a10779253d3c51fefd8dd091"
+dependencies = [
+ "arrayref",
+ "byteorder",
+ "data-encoding",
+ "log",
+ "multibase",
+ "multihash",
+ "percent-encoding",
+ "serde",
+ "static_assertions",
+ "unsigned-varint",
+ "url",
+]
+
+[[package]]
 name = "multibase"
 version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3679,7 +3697,7 @@ dependencies = [
  "async-trait",
  "futures",
  "libp2p",
- "multiaddr",
+ "multiaddr 0.17.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
